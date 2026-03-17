@@ -16,7 +16,7 @@ namespace CalculatorApp
             Console.WriteLine("Введите 2 число: ");
             double b = double.Parse(Console.ReadLine());
 
-            Console.WriteLine($"Результат сложения: {a + b}");
+            Console.WriteLine($"Результат вычитания: {a - b}");
         }
     }
 }
