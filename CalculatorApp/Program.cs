@@ -16,7 +16,11 @@ namespace CalculatorApp
             Console.WriteLine("Введите 2 число: ");
             double b = double.Parse(Console.ReadLine());
 
-            Console.WriteLine($"Результат вычитания: {a + b}");
+            Console.WriteLine("Выберите операцию (+ или *): ");
+            char op = Console.ReadLine()[0];
+
+            double result = op == '+' ? a + b : a * b;
+            Console.WriteLine($"Результат: {result}");
         }
     }
 }
